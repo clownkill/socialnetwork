@@ -1,3 +1,7 @@
 from django.db import models
 
-# Create your models here.
+
+class Post(models.Model):
+    body = models.TextField()
+    created_on = models.DateTimeField(default=timezone.now)
+    author = models.ForeignKey(User, on_delete=models.CASCADE)
