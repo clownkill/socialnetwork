@@ -16,7 +16,7 @@ class PostForm(forms.ModelForm):
         fields = ['body']
 
 
-class CommentFrom(forms.ModelForm):
+class CommentForm(forms.ModelForm):
     comment = forms.CharField(
         label='',
         widget=forms.Textarea(
